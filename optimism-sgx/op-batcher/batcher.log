@@ -1,0 +1,2 @@
+nohup: ignoring input
+t=2024-01-16T14:33:54+0000 lvl=crit msg="Application failed" message="failed to setup: invalid CLI flags: empty L1 RPC URL"

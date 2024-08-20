@@ -1,0 +1,98 @@
+loader.entrypoint = "file:/usr/lib/x86_64-linux-gnu/gramine/libsysdb.so"
+
+libos.entrypoint = "{{ self_exe }}"
+loader.log_level = "error"
+
+# Admin account
+loader.env.GS_ADMIN_ADDRESS = "0x65Ac127F57Ad2485e0295B20D4EE7545dA8235E7"
+loader.env.GS_ADMIN_PRIVATE_KEY = "0xa33364bea70f1ac77bc44e0b10c97e1c9b5e014f8c22d44ad93f3ba0c5084b8c"
+
+# Batcher account
+loader.env.GS_BATCHER_ADDRESS = "0x8F01f3909deB53D9538A005711EeD23E46999294"
+loader.env.GS_BATCHER_PRIVATE_KEY = "0x39828354bd198ccaf3d49d3f3a9cf685d5d222ab22152747283061d4f4c83a6e"
+
+# Proposer account
+loader.env.GS_PROPOSER_ADDRESS = "0xC97Ac254bc6C33Dfe55E7ca63167574De60f8727"
+loader.env.GS_PROPOSER_PRIVATE_KEY = "0x1430610f9df74496f9c1ba9a15b742f5910a9ced85d80939b8186c6e3e27a4b8"
+
+# Sequencer account
+loader.env.GS_SEQUENCER_ADDRESS = "0x4c7bE070aE70B4D4a60e90A787FAd12CDad1F61A"
+loader.env.GS_SEQUENCER_PRIVATE_KEY = "0xd1456175520a03414c219c6e7ec53942a93e959ee65d7a833d8cf2c9222b69ad"
+
+loader.env.L1_RPC_KIND = "basic"
+loader.env.L1_RPC_URL = "https://rpc.sepolia.org"
+
+#loader.env.IMPL_SALT=$(openssl rand -hex 32)
+loader.env.IMPL_SALT = "897ccd43c71fd36cc15daf10a7ec274d81764f66d2760cc4b3063b300ccfd985"
+
+# Name for the deployed network
+loader.env.DEPLOYMENT_CONTEXT = "getting-started"
+
+loader.env.LD_LIBRARY_PATH = "/lib:/lib/x86_64-linux-gnu"
+
+loader.env.MALLOC_ARENA_MAX = "1"
+
+fs.mounts = [
+  #{ path = "/lib", uri = "file:/usr/lib/x86_64-linux-gnu/gramine/runtime/glibc" },
+  { path = "/lib", uri = "file:{{ gramine.runtimedir() }}" },
+  #{ path = "/lib/x86_64-linux-gnu", uri = "file:/usr/lib/x86_64-linux-gnu" },
+  { path = "{{ arch_libdir }}", uri = "file:{{ arch_libdir }}" },
+  { path = "/etc", uri = "file:/etc" },
+  { path = "/usr", uri = "file:/usr" },
+
+  { path = "/datadir" , uri = "file:{{ enclave_dir }}/datadir/",  type = "chroot"},
+  #{ path = "/jwt.txt" , uri = "file:{{ enclave_dir }}/jwt.txt",  type = "chroot"},
+  { type = "tmpfs", path = "/root/.ethereum" },
+  { type = "tmpfs", path = "/home/ubuntu/.ethereum" },
+  { type = "tmpfs", path = "/tmp" },
+]
+
+# Will be SEALED for production
+sgx.allowed_files = [
+  "file:{{ enclave_dir }}/datadir/",
+  "file:{{ enclave_dir }}/jwt.txt",
+]
+
+sgx.trusted_files = [
+  "file:{{ self_exe }}",
+  "file:{{ gramine.libos }}",
+  "file:{{ gramine.runtimedir() }}/",
+  "file:/usr/lib/x86_64-linux-gnu/",
+  "file:/lib/x86_64-linux-gnu/",
+  "file:/etc/",
+]
+
+# The Tokio runtime requires eventfd, and the Gramine implementation
+# currently relies on the host in an insecure manner. This setting isn't
+# suitable for production deployment, but works well as a stopgap during
+# development while a proper implementation in Gramine is being worked on.
+sys.insecure__allow_eventfd = true
+
+sgx.enclave_size = "2G"
+sgx.thread_num = 24
+sgx.max_threads = 24
+#sgx.insecure__rpc_thread_num = 24
+sgx.debug = true
+sgx.nonpie_binary = true
+loader.insecure__use_cmdline_argv = true
+loader.pal_internal_mem_size = "128M"
+
+sgx.require_avx    = true
+#sgx.require_avx512 = false
+#sgx.require_mpx    = false
+#sgx.require_pkru   = false
+#sgx.require_amx    = false
+#sgx.require_exinfo = false
+
+sgx.file_check_policy = "strict"
+
+sgx.remote_attestation = "epid"
+sgx.ra_client_spid = "15AD86B4CFA46B327A8BFB79AA0D67B7"
+sgx.ra_client_linkable = true
+
+sgx.isvprodid = 10
+sgx.isvsvn    = 100
+
+sys.stack.size = "2M"
+sys.enable_extra_runtime_domain_names_conf = true
+sys.experimental__enable_flock = true

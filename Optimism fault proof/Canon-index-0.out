@@ -1,0 +1,158 @@
+L1 head num = 10423165
+L1 head = 0xe4f7f966e554d0c9b2d4bb1493e233faaeae1a3b67ffb8b3afb9981728924c3e
+L1 Latest head = 0x67c89e361c591e6e37c96e1332219d648c2db8821326766f4e57b18bf3b22a43
+L2 Latest Output Index = 0x0000000000000000000000000000000000000000000000000000000000001b8d
+L2 Output Index = 0
+L2 Response = 0x21438336768f296ddf0fecd74ee1d4e56e66d937b3d9a3e964c9a5bf8eba63c3
+1686075935 [1.686e9]
+105236863 [1.052e8]
+L2 Claim = 0x21438336768f296ddf0fecd74ee1d4e56e66d937b3d9a3e964c9a5bf8eba63c3
+L2 Block Number = 105236863
+L2 Head Number = 105236763
+L2 Head  = 0x842d070cc1d07f6923f14981e6f25f51c89ff5fb47a33f8d73576fc91dce4420
+
+INFO [03-26|15:10:28.441] Starting fault proof program             version=v0.10.14-a37c1269-1711372436-dev
+INFO [03-26|15:10:28.441] Rollup Config                            l2_chain_id=10 l2_network=OP-Mainnet l1_chain_id=1 l1_network=mainnet l2_start_time=1,686,068,903 l2_block_hash=0xdbf6a80fef073de06add9b0d14026d6e5a86c85f6d102c36d3d8e9cf89c2afd3 l2_block_number=105,235,063 l1_block_hash=0x438335a20d98863a4c0c97999eb2481921ccd28553eac6f913af7c12aec04108 l1_block_number=17,422,590 regolith_time="@ genesis" canyon_time="@ 1704992401 ~ Thu Jan 11 17:00:01 UTC 2024" delta_time="@ 1708560000 ~ Thu Feb 22 00:00:00 UTC 2024" ecotone_time="@ 1710374401 ~ Thu Mar 14 00:00:01 UTC 2024" fjord_time="(not configured)" interop_time="(not configured)"
+INFO [03-26|15:10:28.441] Starting preimage server
+INFO [03-26|15:10:28.441] Using in-memory storage
+INFO [03-26|15:10:28.441] Connecting to L1 node                    l1=https://ethereum-mainnet.core.chainstack.com/8c5d7d503fcdbaa63dbe42ab0e602cc7
+t=2024-03-26T15:10:28+0000 lvl=info msg=processing step=0 pc=000aa564 insn=0802a955 ips=0 pages=8438 mem="33.0 MiB" name=_rt0_mips_linux
+INFO [03-26|15:10:28.463] Connecting to L2 node                    l2=https://nd-840-223-668.p2pify.com/5a6c8f28a10ba65b211b5d18b7f6121c
+
+t=2024-03-26T15:10:28+0000 lvl=info msg=processing step=10000000 pc=0002cc70 insn=00000000 ips=4.0655010601383515e+07 pages=8579 mem="33.5 MiB" name=runtime.heapBitsSetType
+t=2024-03-26T15:10:28+0000 lvl=info msg=processing step=20000000 pc=001d0160 insn=00000000 ips=3.947970665796255e+07 pages=8675 mem="33.9 MiB" name=encoding/json.stateInString
+t=2024-03-26T15:10:29+0000 lvl=info msg=processing step=30000000 pc=0008ba1c insn=00021825 ips=3.913803717616478e+07 pages=8730 mem="34.1 MiB" name=runtime.slicebytetostring
+t=2024-03-26T15:10:29+0000 lvl=info msg=processing step=40000000 pc=0020fa1c insn=27bd000c ips=3.8989915740793854e+07 pages=8810 mem="34.4 MiB" name=regexp/syntax.ranges.Swap
+t=2024-03-26T15:10:29+0000 lvl=info msg=processing step=50000000 pc=00c09780 insn=1461fffb ips=3.943899406573603e+07 pages=8913 mem="34.8 MiB" name=github.com/ethereum/go-ethereum/core/vm.newFrontierInstructionSet
+t=2024-03-26T15:10:29+0000 lvl=info msg=processing step=60000000 pc=001d0084 insn=00000000 ips=3.938783872697749e+07 pages=8963 mem="35.0 MiB" name=encoding/json.stateInString
+t=2024-03-26T15:10:30+0000 lvl=info msg=processing step=70000000 pc=0002cf6c insn=afa10004 ips=3.92547620260244e+07 pages=9015 mem="35.2 MiB" name=runtime.heapBitsSetType
+
+t=2024-03-26T15:10:30+0000 lvl=info msg="" text="t=1970-06-04T15:23:08+0000 lvl=info msg=\"Starting fault proof program client\"\n"
+t=2024-03-26T15:10:30+0000 lvl=info msg="" text="t=1970-06-04T15:23:08+0000 lvl=info msg=\"Program Bootstrapped\" bootInfo=\"&{L1Head:0xe4f7f966e554d0c9b2d4bb1493e233faaeae1a3b67ffb8b3afb9981728924c3e L2OutputRoot:0x21438336768f296ddf0fecd74ee1d4e56e66d937b3d9a3e964c9a5bf8eba63c3 L2Claim:0x21438336768f296ddf0fecd74ee1d4e56e66d937b3d9a3e964c9a5bf8eba63c3 L2ClaimBlockNumber:105236863 L2ChainID:10 L2ChainConfig:0x40488f80 RollupConfig:0x404b3e40}\"\n"
+t=2024-03-26T15:10:30+0000 lvl=info msg="" text="t=1970-06-04T15:23:09+0000 lvl=info msg=\"L1 head loaded\" hash=0xe4f7f966e554d0c9b2d4bb1493e233faaeae1a3b67ffb8b3afb9981728924c3e number=10423165\n"
+t=2024-03-26T15:10:31+0000 lvl=info msg="" text="t=1970-06-04T15:23:08+0000 lvl=info msg=\"Loaded L2 head\" hash=0xc23f8cccc50ca4cf337540902e5c6936d4ff0c47159fe1e88a7667a223e39f59 number=105236863\n"
+t=2024-03-26T15:10:31+0000 lvl=info msg="" text="t=1970-06-04T15:23:08+0000 lvl=info msg=\"Starting derivation\"\n"
+t=2024-03-26T15:10:31+0000 lvl=info msg="" text="t=1970-06-04T15:23:08+0000 lvl=info msg=\"Loaded current L2 heads\" unsafe=0xc23f8cccc50ca4cf337540902e5c6936d4ff0c47159fe1e88a7667a223e39f59:105236863 safe=0xc23f8cccc50ca4cf337540902e5c6936d4ff0c47159fe1e88a7667a223e39f59:105236863 finalized=0xc23f8cccc50ca4cf337540902e5c6936d4ff0c47159fe1e88a7667a223e39f59:105236863 unsafe_origin=0x4ff36d6c1d878447dcc37b0e63cdf853d0aa5de6fb30799c034e7431960225e0:17422885 safe_origin=0x4ff36d6c1d878447dcc37b0e63cdf853d0aa5de6fb30799c034e7431960225e0:17422885\n"
+t=2024-03-26T15:10:31+0000 lvl=info msg="" text="t=1970-06-04T15:23:09+0000 lvl=info msg=\"Walking back L1Block by number\" curr=0x0000000000000000000000000000000000000000000000000000000000000000:0 next=0x0000000000000000000000000000000000000000000000000000000000000000:0 l2block=0xc23f8cccc50ca4cf337540902e5c6936d4ff0c47159fe1e88a7667a223e39f59:105236863\n"
+t=2024-03-26T15:10:31+0000 lvl=info msg="" text="t=1970-06-04T15:23:08+0000 lvl=info msg=\"Hit finalized L2 head, returning immediately\" unsafe=0xc23f8cccc50ca4cf337540902e5c6936d4ff0c47159fe1e88a7667a223e39f59:105236863 safe=0xc23f8cccc50ca4cf337540902e5c6936d4ff0c47159fe1e88a7667a223e39f59:105236863 finalized=0xc23f8cccc50ca4cf337540902e5c6936d4ff0c47159fe1e88a7667a223e39f59:105236863 unsafe_origin=0x4ff36d6c1d878447dcc37b0e63cdf853d0aa5de6fb30799c034e7431960225e0:17422885 safe_origin=0x4ff36d6c1d878447dcc37b0e63cdf853d0aa5de6fb30799c034e7431960225e0:17422885\n"
+
+t=2024-03-26T15:10:31+0000 lvl=info msg=processing step=80000000 pc=000a45b8 insn=afa2000c ips=2.5070444093321454e+07 pages=9072 mem="35.4 MiB" name=runtime.exitsyscall
+t=2024-03-26T15:10:34+0000 lvl=info msg=processing step=90000000 pc=0002ca24 insn=00a95026 ips=1.5250938003604082e+07 pages=9104 mem="35.6 MiB" name=runtime.writeHeapBits.flush
+t=2024-03-26T15:10:37+0000 lvl=info msg=processing step=100000000 pc=00016ef4 insn=afa20038 ips=1.1380697929633481e+07 pages=9138 mem="35.7 MiB" name=runtime/internal/syscall.Syscall6
+t=2024-03-26T15:10:39+0000 lvl=info msg=processing step=110000000 pc=00233028 insn=01d57025 ips=9.549574106079925e+06 pages=9171 mem="35.8 MiB" name=golang.org/x/crypto/sha3.keccakF1600
+t=2024-03-26T15:10:42+0000 lvl=info msg=processing step=120000000 pc=00071700 insn=afc0002c ips=8.379845415663412e+06 pages=9201 mem="35.9 MiB" name=runtime.save
+t=2024-03-26T15:10:45+0000 lvl=info msg=processing step=130000000 pc=000ecaa0 insn=0041402b ips=7.598844749433085e+06 pages=9230 mem="36.1 MiB" name=io.ReadAtLeast
+t=2024-03-26T15:10:48+0000 lvl=info msg=processing step=140000000 pc=000f4468 insn=27bd0054 ips=6.973663213645654e+06 pages=9264 mem="36.2 MiB" name=internal/poll.(*FD).Read
+t=2024-03-26T15:10:51+0000 lvl=info msg=processing step=150000000 pc=00a2006c insn=00000000 ips=6.54507546439416e+06 pages=9294 mem="36.3 MiB" name=github.com/ethereum/go-ethereum/trie.New
+t=2024-03-26T15:10:54+0000 lvl=info msg=processing step=160000000 pc=00b44c7c insn=14a1fffb ips=6.246236055727832e+06 pages=9323 mem="36.4 MiB" name=github.com/ethereum-optimism/optimism/op-node/rollup/derive.L2BlockToBlockRef
+t=2024-03-26T15:10:56+0000 lvl=info msg=processing step=170000000 pc=000f44c4 insn=00000000 ips=5.972250834163491e+06 pages=9352 mem="36.5 MiB" name=internal/poll.(*FD).Read.func1
+t=2024-03-26T15:10:59+0000 lvl=info msg=processing step=180000000 pc=000a45ac insn=24020003 ips=5.743140542481059e+06 pages=9383 mem="36.7 MiB" name=runtime.exitsyscall
+t=2024-03-26T15:11:02+0000 lvl=info msg=processing step=190000000 pc=00232038 insn=00c83026 ips=5.5847528910647975e+06 pages=9416 mem="36.8 MiB" name=golang.org/x/crypto/sha3.keccakF1600
+t=2024-03-26T15:11:05+0000 lvl=info msg=processing step=200000000 pc=000f41d8 insn=0062182a ips=5.375722913579881e+06 pages=9450 mem="36.9 MiB" name=internal/poll.(*FD).Read
+t=2024-03-26T15:11:08+0000 lvl=info msg=processing step=210000000 pc=00232dd8 insn=8c280028 ips=5.264004702376109e+06 pages=9481 mem="37.0 MiB" name=golang.org/x/crypto/sha3.keccakF1600
+t=2024-03-26T15:11:11+0000 lvl=info msg=processing step=220000000 pc=00016164 insn=3c01020e ips=5.150239874868535e+06 pages=9516 mem="37.2 MiB" name=runtime/internal/atomic.Cas64
+t=2024-03-26T15:11:13+0000 lvl=info msg=processing step=230000000 pc=00016288 insn=0c005930 ips=5.054866063053019e+06 pages=9541 mem="37.3 MiB" name=runtime/internal/atomic.Load64
+t=2024-03-26T15:11:16+0000 lvl=info msg=processing step=240000000 pc=00a0baf0 insn=24210001 ips=4.983034772996137e+06 pages=9571 mem="37.4 MiB" name=github.com/ethereum/go-ethereum/trie.(*nodeIterator).peek
+t=2024-03-26T15:11:19+0000 lvl=info msg=processing step=250000000 pc=0001619c insn=00000000 ips=4.905089018203857e+06 pages=9604 mem="37.5 MiB" name=runtime/internal/atomic.Cas64
+t=2024-03-26T15:11:22+0000 lvl=info msg=processing step=260000000 pc=000f279c insn=01034824 ips=4.79353577326268e+06 pages=9631 mem="37.6 MiB" name=internal/poll.(*fdMutex).rwunlock
+t=2024-03-26T15:11:25+0000 lvl=info msg=processing step=270000000 pc=00069514 insn=e0e80000 ips=4.7551479865373485e+06 pages=9660 mem="37.7 MiB" name=runtime.casgstatus
+t=2024-03-26T15:11:27+0000 lvl=info msg=processing step=280000000 pc=000aa338 insn=10a60007 ips=4.7045285941599365e+06 pages=9691 mem="37.9 MiB" name=runtime.memmove
+t=2024-03-26T15:11:30+0000 lvl=info msg=processing step=290000000 pc=00232ee8 insn=02759825 ips=4.670827128202107e+06 pages=9724 mem="38.0 MiB" name=golang.org/x/crypto/sha3.keccakF1600
+t=2024-03-26T15:11:33+0000 lvl=info msg=processing step=300000000 pc=000f2550 insn=00411824 ips=4.632448480892721e+06 pages=9752 mem="38.1 MiB" name=internal/poll.(*fdMutex).rwlock
+t=2024-03-26T15:11:35+0000 lvl=info msg=processing step=310000000 pc=00016180 insn=8c230004 ips=4.593178303189858e+06 pages=9784 mem="38.2 MiB" name=runtime/internal/atomic.Cas64
+t=2024-03-26T15:11:38+0000 lvl=info msg=processing step=320000000 pc=000f439c insn=3c0601a1 ips=4.5433449406164205e+06 pages=9824 mem="38.4 MiB" name=internal/poll.(*FD).Read
+t=2024-03-26T15:11:41+0000 lvl=info msg=processing step=330000000 pc=000c0750 insn=00000000 ips=4.507710432527471e+06 pages=9854 mem="38.5 MiB" name=syscall.read
+t=2024-03-26T15:11:44+0000 lvl=info msg=processing step=340000000 pc=000716d8 insn=00000000 ips=4.4833828727750145e+06 pages=9882 mem="38.6 MiB" name=runtime.save
+t=2024-03-26T15:11:47+0000 lvl=info msg=processing step=350000000 pc=000164ac insn=1060fffa ips=4.453050597254737e+06 pages=9914 mem="38.7 MiB" name=runtime/internal/atomic.spinLock
+t=2024-03-26T15:11:49+0000 lvl=info msg=processing step=360000000 pc=000aa118 insn=00a73823 ips=4.427453591313482e+06 pages=9946 mem="38.9 MiB" name=runtime.memmove
+t=2024-03-26T15:11:52+0000 lvl=info msg=processing step=370000000 pc=000ff360 insn=afa30020 ips=4.400138864657911e+06 pages=9975 mem="39.0 MiB" name=os.(*File).Read
+t=2024-03-26T15:11:55+0000 lvl=info msg=processing step=380000000 pc=00016150 insn=00000027 ips=4.359684698699655e+06 pages=10005 mem="39.1 MiB" name=runtime/internal/atomic.Cas64
+t=2024-03-26T15:11:58+0000 lvl=info msg=processing step=390000000 pc=000221d0 insn=716b5820 ips=4.327918747138264e+06 pages=10034 mem="39.2 MiB" name=runtime.mallocgc
+t=2024-03-26T15:12:01+0000 lvl=info msg=processing step=400000000 pc=000f2564 insn=1060000e ips=4.305983871473719e+06 pages=10064 mem="39.3 MiB" name=internal/poll.(*fdMutex).rwlock
+t=2024-03-26T15:12:04+0000 lvl=info msg=processing step=410000000 pc=000f25ec insn=93a10018 ips=4.286327660755774e+06 pages=10096 mem="39.4 MiB" name=internal/poll.(*fdMutex).rwlock
+t=2024-03-26T15:12:06+0000 lvl=info msg=processing step=420000000 pc=00016234 insn=8fa10018 ips=4.271181901439585e+06 pages=10122 mem="39.5 MiB" name=runtime/internal/atomic.Load64
+t=2024-03-26T15:12:09+0000 lvl=info msg=processing step=430000000 pc=000f41d4 insn=3c034000 ips=4.25065612788679e+06 pages=10156 mem="39.7 MiB" name=internal/poll.(*FD).Read
+t=2024-03-26T15:12:12+0000 lvl=info msg=processing step=440000000 pc=0002ddd4 insn=afa40004 ips=4.214675844037874e+06 pages=10182 mem="39.8 MiB" name=runtime.(*mcache).refill
+t=2024-03-26T15:12:15+0000 lvl=info msg=processing step=450000000 pc=000f278c insn=2485fff8 ips=4.200899223544909e+06 pages=10218 mem="39.9 MiB" name=internal/poll.(*fdMutex).rwunlock
+t=2024-03-26T15:12:18+0000 lvl=info msg=processing step=460000000 pc=000717c0 insn=8fa10010 ips=4.178232049880884e+06 pages=10245 mem="40.0 MiB" name=runtime.reentersyscall
+t=2024-03-26T15:12:21+0000 lvl=info msg=processing step=470000000 pc=00233bd4 insn=01409027 ips=4.1674013058854155e+06 pages=10272 mem="40.1 MiB" name=golang.org/x/crypto/sha3.keccakF1600
+t=2024-03-26T15:12:24+0000 lvl=info msg=processing step=480000000 pc=00015ffc insn=afa40010 ips=4.152063307020154e+06 pages=10309 mem="40.3 MiB" name=runtime/internal/atomic.Xadd64
+t=2024-03-26T15:12:26+0000 lvl=info msg=processing step=490000000 pc=000722f8 insn=03e00008 ips=4.1374726680701333e+06 pages=10339 mem="40.4 MiB" name=runtime.exitsyscallfast
+t=2024-03-26T15:12:29+0000 lvl=info msg=processing step=500000000 pc=000f257c insn=36f7fff8 ips=4.117725748446317e+06 pages=10370 mem="40.5 MiB" name=internal/poll.(*fdMutex).rwlock
+t=2024-03-26T15:12:32+0000 lvl=info msg=processing step=510000000 pc=000161b0 insn=00000027 ips=4.1053465223423927e+06 pages=10397 mem="40.6 MiB" name=runtime/internal/atomic.Cas64
+t=2024-03-26T15:12:35+0000 lvl=info msg=processing step=520000000 pc=000a4440 insn=27bdfff4 ips=4.099537109155603e+06 pages=10427 mem="40.7 MiB" name=runtime.entersyscall
+t=2024-03-26T15:12:38+0000 lvl=info msg=processing step=530000000 pc=000164bc insn=00000000 ips=4.0885221201419113e+06 pages=10459 mem="40.9 MiB" name=runtime/internal/atomic.spinLock
+t=2024-03-26T15:12:40+0000 lvl=info msg=processing step=540000000 pc=0007198c insn=8fbf0000 ips=4.0797115179250482e+06 pages=10489 mem="41.0 MiB" name=runtime.reentersyscall
+t=2024-03-26T15:12:43+0000 lvl=info msg=processing step=550000000 pc=00a201b8 insn=24420001 ips=4.074210757477147e+06 pages=10536 mem="41.2 MiB" name=github.com/ethereum/go-ethereum/trie.New
+t=2024-03-26T15:12:46+0000 lvl=info msg=processing step=560000000 pc=001005e0 insn=afa10040 ips=4.0552130380699197e+06 pages=10569 mem="41.3 MiB" name=os.(*File).wrapErr
+t=2024-03-26T15:12:49+0000 lvl=info msg=processing step=570000000 pc=00a24d9c insn=00000000 ips=4.0482687765692244e+06 pages=10599 mem="41.4 MiB" name=github.com/ethereum/go-ethereum/trie.(*Trie).resolveAndTrack
+t=2024-03-26T15:12:52+0000 lvl=info msg=processing step=580000000 pc=0001648c insn=8fa10004 ips=4.038631213193494e+06 pages=10630 mem="41.5 MiB" name=runtime/internal/atomic.spinLock
+t=2024-03-26T15:12:54+0000 lvl=info msg=processing step=590000000 pc=000ff2dc insn=00000000 ips=4.032222772618588e+06 pages=10659 mem="41.6 MiB" name=os.(*File).Read
+t=2024-03-26T15:12:57+0000 lvl=info msg=processing step=600000000 pc=000164a0 insn=1480fffe ips=4.0209893775210404e+06 pages=10690 mem="41.8 MiB" name=runtime/internal/atomic.spinLock
+t=2024-03-26T15:13:00+0000 lvl=info msg=processing step=610000000 pc=00248988 insn=a3a40043 ips=4.0152021914786357e+06 pages=10717 mem="41.9 MiB" name=github.com/ethereum/go-ethereum/rlp.makeStructDecoder.func1
+t=2024-03-26T15:13:03+0000 lvl=info msg=processing step=620000000 pc=00016254 insn=24215120 ips=4.006022440913895e+06 pages=10748 mem="42.0 MiB" name=runtime/internal/atomic.Load64
+t=2024-03-26T15:13:06+0000 lvl=info msg=processing step=630000000 pc=00016244 insn=1420001a ips=3.98596104833788e+06 pages=10780 mem="42.1 MiB" name=runtime/internal/atomic.Load64
+t=2024-03-26T15:13:09+0000 lvl=info msg=processing step=640000000 pc=000722ec insn=a3a10028 ips=3.9810617977140774e+06 pages=10809 mem="42.2 MiB" name=runtime.exitsyscallfast
+t=2024-03-26T15:13:12+0000 lvl=info msg=processing step=650000000 pc=009acee4 insn=1481fffb ips=3.9723935716330023e+06 pages=10841 mem="42.3 MiB" name=github.com/ethereum/go-ethereum/trie/triedb/hashdb.(*Database).Reader
+t=2024-03-26T15:13:14+0000 lvl=info msg=processing step=660000000 pc=000221cc insn=256bffff ips=3.9675988154461007e+06 pages=10871 mem="42.5 MiB" name=runtime.mallocgc
+t=2024-03-26T15:13:17+0000 lvl=info msg=processing step=670000000 pc=00016250 insn=3c01020e ips=3.9591927235110234e+06 pages=10899 mem="42.6 MiB" name=runtime/internal/atomic.Load64
+t=2024-03-26T15:13:20+0000 lvl=info msg=processing step=680000000 pc=000f44c0 insn=10200007 ips=3.9521673350006994e+06 pages=10931 mem="42.7 MiB" name=internal/poll.(*FD).Read.func1
+t=2024-03-26T15:13:23+0000 lvl=info msg=processing step=690000000 pc=00233410 insn=01305026 ips=3.9399140092837964e+06 pages=10959 mem="42.8 MiB" name=golang.org/x/crypto/sha3.keccakF1600
+t=2024-03-26T15:13:26+0000 lvl=info msg=processing step=700000000 pc=000162a4 insn=27bd0014 ips=3.933178273536574e+06 pages=10990 mem="42.9 MiB" name=runtime/internal/atomic.Load64
+t=2024-03-26T15:13:29+0000 lvl=info msg=processing step=710000000 pc=000755ec insn=8fbf0000 ips=3.920700339235705e+06 pages=11019 mem="43.0 MiB" name=runtime.wirep
+t=2024-03-26T15:13:32+0000 lvl=info msg=processing step=720000000 pc=000a449c insn=00000000 ips=3.917461738258606e+06 pages=11053 mem="43.2 MiB" name=runtime.exitsyscall
+t=2024-03-26T15:13:35+0000 lvl=info msg=processing step=730000000 pc=0001619c insn=00000000 ips=3.911724249481392e+06 pages=11079 mem="43.3 MiB" name=runtime/internal/atomic.Cas64
+t=2024-03-26T15:13:38+0000 lvl=info msg=processing step=740000000 pc=00021c80 insn=10400045 ips=3.9000168961754837e+06 pages=11110 mem="43.4 MiB" name=runtime.mallocgc
+t=2024-03-26T15:13:41+0000 lvl=info msg=processing step=750000000 pc=000f2514 insn=afa7002c ips=3.887526626709521e+06 pages=11143 mem="43.5 MiB" name=internal/poll.(*fdMutex).rwlock
+t=2024-03-26T15:13:44+0000 lvl=info msg=processing step=760000000 pc=00016e70 insn=8fa10020 ips=3.882837112456003e+06 pages=11173 mem="43.6 MiB" name=syscall.RawSyscall6
+t=2024-03-26T15:13:46+0000 lvl=info msg=processing step=770000000 pc=000f40d0 insn=a3a00023 ips=3.8809324238774525e+06 pages=11203 mem="43.8 MiB" name=internal/poll.(*FD).Read
+t=2024-03-26T15:13:49+0000 lvl=info msg=processing step=780000000 pc=000f2758 insn=30630001 ips=3.87606556936022e+06 pages=11232 mem="43.9 MiB" name=internal/poll.(*fdMutex).rwunlock
+t=2024-03-26T15:13:52+0000 lvl=info msg=processing step=790000000 pc=000229fc insn=00000000 ips=3.8735344070192855e+06 pages=11264 mem="44.0 MiB" name=runtime.newobject
+t=2024-03-26T15:13:55+0000 lvl=info msg=processing step=800000000 pc=00016e38 insn=8fa10034 ips=3.868843141109058e+06 pages=11293 mem="44.1 MiB" name=syscall.RawSyscall6
+t=2024-03-26T15:13:58+0000 lvl=info msg=processing step=810000000 pc=0023161c insn=afbc0048 ips=3.8609009455320123e+06 pages=11326 mem="44.2 MiB" name=golang.org/x/crypto/sha3.keccakF1600
+t=2024-03-26T15:14:01+0000 lvl=info msg=processing step=820000000 pc=000f2544 insn=1440003b ips=3.856331012201527e+06 pages=11353 mem="44.3 MiB" name=internal/poll.(*fdMutex).rwlock
+t=2024-03-26T15:14:03+0000 lvl=info msg=processing step=830000000 pc=000f439c insn=3c0601a1 ips=3.851863565185728e+06 pages=11383 mem="44.5 MiB" name=internal/poll.(*FD).Read
+t=2024-03-26T15:14:06+0000 lvl=info msg=processing step=840000000 pc=000ff344 insn=8fa20034 ips=3.8481958410953223e+06 pages=11414 mem="44.6 MiB" name=os.(*File).Read
+t=2024-03-26T15:14:09+0000 lvl=info msg=processing step=850000000 pc=00247608 insn=0083182b ips=3.8433325882696854e+06 pages=11446 mem="44.7 MiB" name=github.com/ethereum/go-ethereum/rlp.decodeByteArray
+t=2024-03-26T15:14:12+0000 lvl=info msg=processing step=860000000 pc=002334ac insn=02b4a026 ips=3.840881612701427e+06 pages=11478 mem="44.8 MiB" name=golang.org/x/crypto/sha3.keccakF1600
+t=2024-03-26T15:14:15+0000 lvl=info msg=processing step=870000000 pc=000f42c0 insn=00000000 ips=3.8324224266262143e+06 pages=11504 mem="44.9 MiB" name=internal/poll.(*FD).Read
+t=2024-03-26T15:14:18+0000 lvl=info msg=processing step=880000000 pc=00069600 insn=1480000e ips=3.829849858506628e+06 pages=11542 mem="45.1 MiB" name=runtime.casgstatus
+t=2024-03-26T15:14:20+0000 lvl=info msg=processing step=890000000 pc=00016164 insn=3c01020e ips=3.827640395578134e+06 pages=11568 mem="45.2 MiB" name=runtime/internal/atomic.Cas64
+t=2024-03-26T15:14:23+0000 lvl=info msg=processing step=900000000 pc=00016eb0 insn=8fa60028 ips=3.823606139769222e+06 pages=11599 mem="45.3 MiB" name=runtime/internal/syscall.Syscall6
+t=2024-03-26T15:14:26+0000 lvl=info msg=processing step=910000000 pc=000a4448 insn=27a1000c ips=3.823742317447751e+06 pages=11631 mem="45.4 MiB" name=runtime.entersyscall
+t=2024-03-26T15:14:29+0000 lvl=info msg=processing step=920000000 pc=00cb4dd0 insn=24420001 ips=3.8216672683743523e+06 pages=11661 mem="45.6 MiB" name=github.com/ethereum-optimism/optimism/op-program/client/l2.(*PreimageOracle).LoadTransactions.func1
+t=2024-03-26T15:14:32+0000 lvl=info msg=processing step=930000000 pc=0023164c insn=0282a025 ips=3.813669388890345e+06 pages=11689 mem="45.7 MiB" name=golang.org/x/crypto/sha3.keccakF1600
+t=2024-03-26T15:14:35+0000 lvl=info msg=processing step=940000000 pc=000722dc insn=00000000 ips=3.810211748188532e+06 pages=11723 mem="45.8 MiB" name=runtime.exitsyscallfast
+t=2024-03-26T15:14:37+0000 lvl=info msg=processing step=950000000 pc=00016180 insn=8c230004 ips=3.8071599331658417e+06 pages=11754 mem="45.9 MiB" name=runtime/internal/atomic.Cas64
+t=2024-03-26T15:14:40+0000 lvl=info msg=processing step=960000000 pc=000ff39c insn=afa30038 ips=3.806062128369834e+06 pages=11781 mem="46.0 MiB" name=os.(*File).Read
+t=2024-03-26T15:14:43+0000 lvl=info msg=processing step=970000000 pc=00071820 insn=00000000 ips=3.8027481762163606e+06 pages=11813 mem="46.1 MiB" name=runtime.reentersyscall
+t=2024-03-26T15:14:46+0000 lvl=info msg=processing step=980000000 pc=0023212c insn=8fb60048 ips=3.801767493243282e+06 pages=11840 mem="46.2 MiB" name=golang.org/x/crypto/sha3.keccakF1600
+t=2024-03-26T15:14:49+0000 lvl=info msg=processing step=990000000 pc=00016178 insn=8fa10010 ips=3.793684822567777e+06 pages=11875 mem="46.4 MiB" name=runtime/internal/atomic.Cas64
+t=2024-03-26T15:14:52+0000 lvl=info msg=processing step=1000000000 pc=000a44c4 insn=00000000 ips=3.7901494845243166e+06 pages=11903 mem="46.5 MiB" name=runtime.exitsyscall
+t=2024-03-26T15:14:55+0000 lvl=info msg=processing step=1010000000 pc=000f2560 insn=a3a3001f ips=3.7885619783055224e+06 pages=11950 mem="46.7 MiB" name=internal/poll.(*fdMutex).rwlock
+t=2024-03-26T15:14:57+0000 lvl=info msg=processing step=1020000000 pc=0001616c insn=afa10004 ips=3.787574317638129e+06 pages=11995 mem="46.9 MiB" name=runtime/internal/atomic.Cas64
+t=2024-03-26T15:15:00+0000 lvl=info msg=processing step=1030000000 pc=00021dc8 insn=00000000 ips=3.786285060891658e+06 pages=12032 mem="47.0 MiB" name=runtime.mallocgc
+t=2024-03-26T15:15:03+0000 lvl=info msg=processing step=1040000000 pc=00016498 insn=00021825 ips=3.781941883416142e+06 pages=12062 mem="47.1 MiB" name=runtime/internal/atomic.spinLock
+t=2024-03-26T15:15:06+0000 lvl=info msg=processing step=1050000000 pc=00233098 insn=03319026 ips=3.775792600059315e+06 pages=12094 mem="47.2 MiB" name=golang.org/x/crypto/sha3.keccakF1600
+t=2024-03-26T15:15:09+0000 lvl=info msg=processing step=1060000000 pc=0024d39c insn=8fa30040 ips=3.772497465672548e+06 pages=12127 mem="47.4 MiB" name=github.com/ethereum/go-ethereum/rlp.(*Stream).readFull
+t=2024-03-26T15:15:12+0000 lvl=info msg=processing step=1070000000 pc=0024caf4 insn=8fa6002c ips=3.7716736385028767e+06 pages=12154 mem="47.5 MiB" name=github.com/ethereum/go-ethereum/rlp.(*Stream).Kind
+t=2024-03-26T15:15:14+0000 lvl=info msg=processing step=1080000000 pc=000f25d4 insn=8fa2003c ips=3.7696380103406208e+06 pages=12187 mem="47.6 MiB" name=internal/poll.(*fdMutex).rwlock
+t=2024-03-26T15:15:17+0000 lvl=info msg=processing step=1090000000 pc=000a4454 insn=afa10008 ips=3.765928324997464e+06 pages=12217 mem="47.7 MiB" name=runtime.entersyscall
+t=2024-03-26T15:15:20+0000 lvl=info msg=processing step=1100000000 pc=00069504 insn=c0f70000 ips=3.7641121529091527e+06 pages=12245 mem="47.8 MiB" name=runtime.casgstatus
+t=2024-03-26T15:15:23+0000 lvl=info msg=processing step=1110000000 pc=001003c0 insn=14200006 ips=3.7601561185283884e+06 pages=12277 mem="48.0 MiB" name=os.(*File).wrapErr
+t=2024-03-26T15:15:26+0000 lvl=info msg=processing step=1120000000 pc=000164c4 insn=0000000f ips=3.7577748500214894e+06 pages=12309 mem="48.1 MiB" name=runtime/internal/atomic.spinUnlock
+t=2024-03-26T15:15:29+0000 lvl=info msg=processing step=1130000000 pc=002327c4 insn=00038080 ips=3.7569431343810805e+06 pages=12337 mem="48.2 MiB" name=golang.org/x/crypto/sha3.keccakF1600
+t=2024-03-26T15:15:32+0000 lvl=info msg=processing step=1140000000 pc=00016144 insn=afbf0000 ips=3.7546073501775013e+06 pages=12365 mem="48.3 MiB" name=runtime/internal/atomic.Cas64
+t=2024-03-26T15:15:34+0000 lvl=info msg=processing step=1150000000 pc=00069768 insn=00000000 ips=3.752264399006226e+06 pages=12398 mem="48.4 MiB" name=runtime.casgstatus
+t=2024-03-26T15:15:37+0000 lvl=info msg=processing step=1160000000 pc=000f25fc insn=14200007 ips=3.751737991698848e+06 pages=12428 mem="48.5 MiB" name=internal/poll.(*fdMutex).rwlock
+
+t=2024-03-26T15:15:38+0000 lvl=info msg="" text="t=1970-06-04T15:23:08+0000 lvl=info msg=\"Sync progress\" reason=\"reset derivation work\" l2_finalized=0xc23f8cccc50ca4cf337540902e5c6936d4ff0c47159fe1e88a7667a223e39f59:105236863 l2_safe=0xc23f8cccc50ca4cf337540902e5c6936d4ff0c47159fe1e88a7667a223e39f59:105236863 l2_pending_safe=0xc23f8cccc50ca4cf337540902e5c6936d4ff0c47159fe1e88a7667a223e39f59:105236863 l2_unsafe=0xc23f8cccc50ca4cf337540902e5c6936d4ff0c47159fe1e88a7667a223e39f59:105236863 l2_time=1686072503 l1_derived=0x438335a20d98863a4c0c97999eb2481921ccd28553eac6f913af7c12aec04108:17422590\n"
+t=2024-03-26T15:15:38+0000 lvl=info msg="" text="t=1970-06-04T15:23:08+0000 lvl=info msg=\"completed reset of derivation pipeline\" origin=0x438335a20d98863a4c0c97999eb2481921ccd28553eac6f913af7c12aec04108:17422590\n"
+t=2024-03-26T15:15:38+0000 lvl=info msg=processing step=1170000000 pc=00a0c7f8 insn=a0570000 ips=3.7684700063527864e+06 pages=12446 mem="48.6 MiB" name=github.com/ethereum/go-ethereum/trie.(*nodeIterator).resolveHash
+t=2024-03-26T15:15:39+0000 lvl=info msg=processing step=1180000000 pc=000aa0c0 insn=8fa10004 ips=3.797316977843386e+06 pages=12460 mem="48.7 MiB" name=runtime.memmove
+t=2024-03-26T15:15:39+0000 lvl=info msg="" text="t=1970-06-04T15:23:08+0000 lvl=info msg=\"Reset of L1Retrieval done\" origin=0x438335a20d98863a4c0c97999eb2481921ccd28553eac6f913af7c12aec04108:17422590\n"
+t=2024-03-26T15:15:39+0000 lvl=info msg="" text="t=1970-06-04T15:23:09+0000 lvl=info msg=\"Derivation complete: reached L1 head\" head=0xc23f8cccc50ca4cf337540902e5c6936d4ff0c47159fe1e88a7667a223e39f59:105236863\n"
+t=2024-03-26T15:15:40+0000 lvl=info msg="" text="t=1970-06-04T15:23:08+0000 lvl=info msg=\"Validating claim\" head=0xc23f8cccc50ca4cf337540902e5c6936d4ff0c47159fe1e88a7667a223e39f59:105236863 output=0x21438336768f296ddf0fecd74ee1d4e56e66d937b3d9a3e964c9a5bf8eba63c3 claim=0x21438336768f296ddf0fecd74ee1d4e56e66d937b3d9a3e964c9a5bf8eba63c3\n"
+t=2024-03-26T15:15:40+0000 lvl=info msg=processing step=1190000000 pc=001f0b68 insn=8c370004 ips=3.808508824590979e+06 pages=12501 mem="48.8 MiB" name=golang.org/x/exp/slog.(*commonHandler).handle
+t=2024-03-26T15:15:40+0000 lvl=info msg="" text="t=1970-06-04T15:23:09+0000 lvl=info msg=\"Claim successfully verified\"\n"
+t=2024-03-26T15:15:40+0000 lvl=info msg="Execution stopped" exited=true code=0

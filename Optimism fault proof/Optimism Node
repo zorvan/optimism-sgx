@@ -1,0 +1,65 @@
+mkdir optimism
+cd optimism/
+
+sudo apt update
+sudo apt upgrade
+
+sudo apt install -y git curl make jq zstd
+
+wget https://go.dev/dl/go1.20.linux-amd64.tar.gz
+tar xvzf go1.20.linux-amd64.tar.gz
+sudo cp go/bin/go /usr/bin/go
+sudo mv go /usr/lib
+echo export GOROOT=/usr/lib/go >> ~/.bashrc
+source ~/.bashrc
+
+curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.7/install.sh | bash
+source ~/.bashrc
+nvm install 18.17.1 && nvm use 18.17.1
+sudo npm install -g pnpm
+
+curl -L https://foundry.paradigm.xyz > foundry.sh
+sudo chmod +x foundry.sh 
+./foundry.sh
+source /home/ubuntu/.bashrc
+foundryup 
+
+git clone https://github.com/ethereum-optimism/optimism.git op-node
+cd op-node
+pnpm install
+make op-node
+pnpm build
+
+cd ..
+git clone https://github.com/ethereum-optimism/op-geth.git
+cd op-geth    
+make geth
+
+mkdir data
+curl -o genesis.json -sL https://networks.optimism.io/op-sepolia/genesis.json
+./build/bin/geth init --datadir="./data" "./genesis.json"
+openssl rand -hex 32 > jwt.txt
+./build/bin/geth \
+  --datadir=./data \
+  --http \
+  --http.port=8545 \
+  --http.addr=0.0.0.0 \
+  --authrpc.addr=localhost \
+  --authrpc.jwtsecret=./jwt.txt \
+  --verbosity=3 \
+  --rollup.sequencerhttp=https://sepolia-sequencer.optimism.io/ \
+  --nodiscover \
+  --syncmode=full \
+  --maxpeers=0 \
+  --op-network=op-sepolia
+
+cd ../op-node
+./bin/op-node \
+    --l1=https://dev-c1n1.ternoa.network  \
+    --l1.rpckind=<< L1 RPC KIND >> \
+    --l2=ws://localhost:8551 \
+    --l2.jwt-secret=../op-geth/jwt.txt \
+    --rpc.addr=0.0.0.0 \
+    --rpc.port=8547 \
+    --network=op-sepolia \
+    --rollup.load-protocol-versions=true
