@@ -1,0 +1,56 @@
+{% extends "base.html" %}
+
+{% block content %}
+  <table id="data" class="table table-striped">
+    <thead>
+      <tr>
+        <th>L1 TxId</th>
+        <th>L1 Block Number</th>
+        <th>L1 Block Hash</th>
+        <th>Timestamp</th>
+      </tr>
+    </thead>
+    <tbody>
+    </tbody>
+  </table>
+{% endblock %}
+
+{% block scripts %}
+  <script>
+    $(document).ready(function () {
+      $('#data').DataTable({
+        ajax: '/api/data',
+        columns: [
+          {
+            data: 'txid', 
+            searchable: true, 
+            fnCreatedCell: function (nTd, cellData, rowData, iRow, iCol) {
+              $(nTd).html("<a href='https://sepolia.etherscan.io/tx/"+cellData+"'>"+cellData+"</a>");
+            }
+          },
+          {
+            data: 'blocknumber', 
+            orderable: true, 
+            searchable: true,
+            fnCreatedCell: function (nTd, cellData, rowData, iRow, iCol) {
+              $(nTd).html("<a href='https://sepolia.etherscan.io/block/"+cellData+"'>"+cellData+"</a>");
+            }
+          },
+          {
+            data: 'blockhash', 
+            orderable: false, 
+            searchable: true,
+            fnCreatedCell: function (nTd, cellData, rowData, iRow, iCol) {
+              $(nTd).html("<a href='https://sepolia.etherscan.io/block/"+cellData+"'>"+cellData+"</a>");
+            }
+          },
+          {
+            data: 'timestamp', 
+            orderable: true, 
+            searchable: true
+          }
+        ],
+      });
+    });
+  </script>
+{% endblock %}

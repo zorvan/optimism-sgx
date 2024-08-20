@@ -1,0 +1,5 @@
+./batcher-dashboard/op-batcher/bin
+./optimism-sgx/op-geth/bin
+./optimism-sgx/op-proposer/bin
+./optimism-sgx/op-batcher/bin
+./optimism-sgx/op-node/bin
